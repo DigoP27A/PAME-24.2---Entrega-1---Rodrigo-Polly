@@ -1,0 +1,168 @@
+html, body {
+    direction:column;
+    margin: 0; 
+    padding: 0; 
+    height: 100%; 
+    width: 100%;   
+}
+.background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.background::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('C:/Users/Rodrigo/Desktop/empi.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    z-index: -1; 
+}
+.netfluxo{
+    position:absolute;
+    top:10px;
+    left:10px;
+    width: 20%;
+    height:auto;
+}
+.centralizado {
+    width: 520px; 
+    height: 700px;   
+    background-color:rgba(0, 0, 0, 0.7);
+    display: flex;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+}
+.login{
+    width: 81%; 
+    height: 81%;   
+    background-color:transparent;
+    display: flex;
+    flex-direction: column;
+    align-items:stretch;
+    justify-items: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+.caixainput{
+    width:100%;
+    height:20%;
+    display:flex;
+    justify-content:center;
+    background-color:rgb(56, 56, 56);
+    align-items:center;
+}
+.caixainput input{
+    width:100%;
+    padding:10px;
+    font-size:20px;
+    border: 2px solid grey;
+    color: gray;
+    background-color:rgb(56, 56, 56);
+}
+.caixainput input::placeholder{
+    color: gray;
+    opacity: 1;
+}
+.btn{
+    position:relative;
+    width: 100%;
+    height: 30%;
+    color: white;
+    background-color:orange;
+    border:none;
+    cursor:pointer;
+    font-size: 20px;
+}
+.bt2{
+    position:relative;
+    width:100%;
+    height:30%;
+    color:white;
+    background-color: rgb(128, 128, 128, 0.7);
+    border:none;
+    cursor:pointer;
+    font-size:20px;
+}
+.recuperarsen a{
+    display:block;
+    font-size:20px;
+    color:white;
+    text-align:center;
+    text-decoration:none;
+    margin-top: 15px;
+}
+.lembrar{
+    display:flex;
+    font-size:20px;
+    margin-top:20px;
+}
+.textolink{
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    gap:5px;
+    margin-top:10px;
+}
+.novo{
+    font-size:20px;
+    color:grey;
+}
+.assine a{
+    text-decoration:none;
+    color:white;
+    font-size:20px;
+}
+h2 {
+    color:grey;
+    font-size: 20px;
+    text-align:center;
+    margin-top:20px;
+}
+
+footer{
+    width: 100%;
+    background-color:black;
+    color:gray;
+    padding: 20px;
+    box-sizing:border-box;    
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width:100%; 
+}
+.links{
+    display: flex;
+    justify-content: space-around;
+    color: gray;
+    gap: 100px;
+    
+}
+.coluna{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.links .coluna a{
+    color: gray;
+    font-size: 20px;
+}
+
